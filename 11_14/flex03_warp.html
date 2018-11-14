@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    *{
+      padding:0;
+      margin:0;
+    }
+    #hd{
+      width:80%;
+      height:600px;
+      border:3px solid blue;
+      margin: 0 auto;
+      display:flex;
+      /*保持元素默认宽度，该换行就换行*/
+      flex-wrap:wrap;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+    #hd div{
+      width:300px;
+      height:120px;
+      background:orange;
+      border:1px solid green;
+      margin-bottom:  20px
+    }
+  </style>
+</head>
+<body>
+  <div id="hd">
+    <div >1</div>
+    <div >2</div>
+    
+    <div >3</div>
+    <div >4</div>
+    <div >5</div>
+    <div >6</div>
+    <div >7</div>
+
+  </div>
+</body>
+</html>

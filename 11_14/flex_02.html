@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Docume</title>
+  <style media="screen">
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    #hd{
+      height: 300px;
+      width: 1000px;
+      border:3px solid blue;
+      margin: 0 auto;
+      /* background: blue; */
+      /*将div设置成弹性盒模型模式
+      如果将父元素设置为弹性盒模型模式，子元素会默认水平排列，如果子元素
+      的像素宽度大于父级元素，那么就均分附近元素宽度，原宽度失效*/
+      display: flex;
+    }
+    #hd div{
+      height: 300px;
+      width: 300px;
+      float: left;
+      background: orange;
+      border: 1px solid green;
+
+
+    }
+  </style>
+</head>
+<body>
+  <div id="hd">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+  </div>
+
+</body>
+</html>
