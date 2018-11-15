@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>package</title>
+  </head>
+  <body>
+    <style media="screen">
+      *{
+        padding:0;
+        margin:0;
+      }
+      li{
+        list-style:none;
+        float:left;
+        width:200px;
+        height:150px;
+        background:purple;
+        color:white;
+        line-height:150px;
+        text-align:center;
+        font-size:30px;
+        margin:20px;
+
+      }
+    </style>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+    </ul>
+    <script>
+      var lis = document.getElementsByTagName('li');
+      for(var i=0;i<lis.length;i++){
+        // 这是给事件添加了一个闭包
+        // (function(x){
+        //   //给i号li加单机事件
+        //   lis[x].onclick = function(){
+        //     alert(x);
+        //   }
+        // })(i)
+
+        let x = i;
+        lis[x].onclick = function(){
+          alert(x);
+        }
+      }
+    </script>
+  </body>
+</html>
