@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    //  var hd = '哈哈';
+    //symbol其实就是生成一个不会与其他任何值都相等的值
+    let hd = Symbol();
+    let human = Symbol('huma');
+    console.log(hd==human); //false
+
+    console.log(hd); //Symble
+    console.log(human);//Symble(huma)
+    </script>
+  </body>
+</html>

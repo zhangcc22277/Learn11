@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var a =Symbol('a');
+      var obj ={
+        [a]:1,
+        b:2,
+        c:3,
+      }
+      obj.a=4;
+      console.log(obj.a);//4
+      //这个【a】是独一无二的属性
+      console.log(obj[a]);//1
+      //新增了一个属性名独一无二的数据
+      var b =Symbol('b');
+      obj[b]='哈哈';
+    </script>
+  </body>
+</html>
